@@ -163,4 +163,4 @@ print(f"Accuracy on train data = {(acc_train * 100):0.2f}")
 
 title = "Noise Added to Smooth boundary" if args.jitter else "Known Overfit"
 plot_decision_boundary(lambda x: predict(x),
-                       xy_data, labels, title
+                       xy_data, labels, title)
