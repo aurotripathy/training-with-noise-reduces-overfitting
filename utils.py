@@ -8,7 +8,7 @@ import matplotlib
 def read_data():
     xy = []
     label = []
-    with open('data-two-classes.csv') as csv_file:
+    with open('points-two-classes.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         next(csv_reader)
         for row in csv_reader:
