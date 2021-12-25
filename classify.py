@@ -67,25 +67,25 @@ def predict(x):
     return predictions.numpy()
 
 
-def plot_decision_boundary(pred_func, points, labels):
-    # Set min and max values and give it some padding
+def plot_decision_boundary(pred_func, points, labels, title):
     points = np.asarray(points)
     labels = np.asarray(labels)
+    # Set min, max and generate a grid of points with distance hop between them
     x_min, x_max = points[:, 0].min() - .5, points[:, 0].max() + .5
     y_min, y_max = points[:, 1].min() - .5, points[:, 1].max() + .5
-    h = 0.01
-
-    # Generate a grid of points with distance h between them
-    xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
-                         np.arange(y_min, y_max, h))
-    # Predict the function value for the whole gid
-    Z = pred_func(np.c_[xx.ravel(), yy.ravel()])
-    Z = Z.reshape(xx.shape)
+    hop = 0.01
+    xv, yv = np.meshgrid(np.arange(x_min, x_max, hop),
+                         np.arange(y_min, y_max, hop))
+    # Predict the output for the whole grid
+    Z = pred_func(np.c_[xv.ravel(), yv.ravel()])
+    Z = Z.reshape(xv.shape)
+    plt.title(title)
     plt.xlim(0., 1.)
     plt.ylim(0., 1.)
-    plt.contourf(xx, yy, Z, cmap=plt.cm.Spectral)
+    plt.contourf(xv, yv, Z, cmap=plt.cm.Spectral)
     plt.scatter(points[:, 0], points[:, 1], c=labels, cmap=plt.cm.binary)
-    plt.show()
+    # plt.show()
+    plt.savefig('-'.join(title.split()) + '.png')
 
 
 def add_gauss_noise(point, sigma):
@@ -142,8 +142,6 @@ train_loader = torch.utils.data.DataLoader(train_ds,
 print("Creating 2-10-50-1 binary NN classifier ")
 model = ThreeLayerNLP().to(device)
 
-
-print("\nPreparing training")
 lrn_rate = 0.1
 loss_func = torch.nn.BCELoss()  # binary cross entropy
 optimizer = torch.optim.SGD(model.parameters(), lr=lrn_rate)
@@ -155,14 +153,14 @@ print(f"Learn rate: {lrn_rate}")
 print(f"Batch size: {batch_size}")
 print(f"Max epochs: {max_epochs}")
 
-print("\nStarting training")
-train(jitter=True)
-print("Done training.")
+print(f"Training for {max_epochs} epochs")
+train(args.jitter)
 
 model = model.train()  # set training mode
 model = model.eval()
 acc_train = accuracy(model, train_ds)  # we don't have a test set
 print(f"Accuracy on train data = {(acc_train * 100):0.2f}")
 
+title = "Noise Added to Smooth boundary" if args.jitter else "Known Overfit"
 plot_decision_boundary(lambda x: predict(x),
-                       xy_data, labels)
+                       xy_data, labels, title
