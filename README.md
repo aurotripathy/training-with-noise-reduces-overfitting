@@ -38,3 +38,7 @@ Per Russell, "With 671 weights, but only 31 training points, the network is very
 <img src="Known-Overfit.png" alt="drawing" style="width:600px;"/>
 
 ## Smoothing with Jitter
+
+Per the book, training with jitterred data discourages sharp changes in the response near the training points and so discurages the network from overly complex boundaries. 
+
+<img src="Noise-Added-to-Smooth-boundary.png" alt="drawing" style="width:600px;"/>
