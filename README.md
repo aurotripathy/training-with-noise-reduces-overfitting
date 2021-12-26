@@ -16,7 +16,7 @@ Going through an analog to digital conversion, we geta dataset of 31 point and t
 
 The model is a very simple 2/50/10/1 network, the same used the Russell's book. 
 
-<code>
+```
 class ThreeLayerNLP(torch.nn.Module):
     def __init__(self):
         super().__init__()
@@ -29,8 +29,7 @@ class ThreeLayerNLP(torch.nn.Module):
         x = torch.tanh(self.layer2(x))
         out = torch.sigmoid(self.output(x))
         return out
-</code>
-
+```
 
 ## Trained to Intentionally Overfit
 
