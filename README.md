@@ -75,3 +75,4 @@ Training with jitter yields the decision boundary plot, `Noise-Added-to-Smooth-b
 
 ## Reference
 _Neural Smithing: Supervised Learning in Feedforward Artificial Neural Networks (A Bradford Book) Illustrated Edition_
+by Russell Reed
