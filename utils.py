@@ -26,10 +26,14 @@ def plot_data(xy, label):
     colors = ['red', 'green']
 
     fig = plt.figure(figsize=(8, 8))
+    plt.title('The Dataset')
+    plt.xlim(0., 1.)
+    plt.ylim(0., 1.)
     plt.scatter(x, y, c=label,
                 cmap=matplotlib.colors.ListedColormap(colors))
 
-    plt.show()
+    # plt.show()
+    plt.savefig('original-dataset.png')
 
 
 if __name__ == '__main__':
