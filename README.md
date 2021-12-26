@@ -59,6 +59,11 @@ We notice that, for the same number of epochs and the same batch-size (effective
 
 <img src="Noise-Added-to-Smooth-boundary.png" alt="drawing" style="width:600px;"/>
 
+## Summary
+To summarize, we went from the overfittef situation on the left to the generalized situation on the right.
+
+<img src="m_merged.png" alt="drawing" style="width:600px;"/>
+
 ## How to Run
 
 The default mode it to simply train over the small dataset with intentional overfitting (no jitter in the input data).
