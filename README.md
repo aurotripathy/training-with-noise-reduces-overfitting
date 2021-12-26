@@ -66,7 +66,7 @@ python3 classify.py
 ```
 The training yields the decision boundary plot, `Known-Overfit.png`.
 
-To jitter the inputs:
+To jitter the inputs, type:
 
 ```
 python3 classify.py  --jitter
