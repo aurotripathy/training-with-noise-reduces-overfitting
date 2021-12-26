@@ -8,13 +8,13 @@ The dataset has only 31 points distributed equally adross two classes. I came ac
 
 <img src="hand-derived-point.png-1.png" alt="drawing" style="width:600px;"/>
 
-Going through an analog to digital conversion, we geta dataset of 31 point and two classes:
+Going through an analog to digital conversion, we get a dataset of 31 point across two classes:
 
 <img src="original-dataset.png" alt="drawing" style="width:600px;"/>
 
 ## The Model
 
-The model is a very simple 2/50/10/1 MLP network, the same used the Russell's book. It has 671 weights.
+The model is a very simple 2/50/10/1 MLP network, the same used the Russell's book.
 
 ```
 class ThreeLayerNLP(torch.nn.Module):
@@ -33,7 +33,7 @@ class ThreeLayerNLP(torch.nn.Module):
 
 ## Trained to Intentionally Overfit
 
-Per Russell, "With 671 weights, but only 31 training points, the network is very underconstrained and chooses a very nonlinear boundary".
+Per Russell, "With 671 weights, but only 31 training points, the network is very underconstrained and chooses a very nonlinear boundary". And it does turn out that way as you can see below.
 
 <img src="Known-Overfit.png" alt="drawing" style="width:600px;"/>
 
