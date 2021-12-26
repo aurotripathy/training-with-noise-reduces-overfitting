@@ -59,8 +59,15 @@ We notice that, for the same number of epochs and the same batch-size (effective
 
 ## How to Run
 
-The default mode it to over the small dataset
+The default mode it to simply train over the small dataset with intentional overfitting.
 
 ```
 python3 classify.py 
 ```
+
+To jitter the inputs:
+
+```python3 classify.py  --jitter
+
+```
+
