@@ -14,7 +14,7 @@ Going through an analog to digital conversion, we geta dataset of 31 point and t
 
 ## The Model
 
-The model is a very simple 2/50/10/1 network, the same used the Russell's book. 
+The model is a very simple 2/50/10/1 MLP network, the same used the Russell's book. It has 671 weights.
 
 ```
 class ThreeLayerNLP(torch.nn.Module):
@@ -32,5 +32,9 @@ class ThreeLayerNLP(torch.nn.Module):
 ```
 
 ## Trained to Intentionally Overfit
+
+Per Russell, "With 671 weights, but only 31 training points, the network is very underconstrained and chooses a very nonlinear boundary".
+
+<img src="Known-Overfit.png" alt="drawing" style="width:600px;"/>
 
 ## Smoothing with Jitter
