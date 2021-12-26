@@ -6,8 +6,7 @@ This example illustrates the smoothing effects of training with input jitter.
 
 The dataset has only 31 points and two classes. I came across it in Russel Reed's book, Neural Smithing (page 282). The data isn't (digitally) available anywhere, so I had to recreate it by hand (it was fun to work once again with a ruler and pencil). 
 
-![original data](./hand-derived-point.png-1.png)
-<img src="hand-derived-point.png-1.png" alt="drawing" style="width:200px;"/>
+<img src="hand-derived-point.png-1.png" alt="drawing" style="width:400px;"/>
 
 ## The Model
 
