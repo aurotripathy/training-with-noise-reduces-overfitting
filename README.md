@@ -67,7 +67,8 @@ python3 classify.py
 
 To jitter the inputs:
 
-```python3 classify.py  --jitter
+```
+python3 classify.py  --jitter
 
 ```
 
