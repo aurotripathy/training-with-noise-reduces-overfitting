@@ -39,6 +39,8 @@ Per Russell, "With 671 weights, but only 31 training points, the network is very
 
 ## Smoothing with Jitter
 
-Per the book, training with jitterred data discourages sharp changes in the response near the training points and so discurages the network from overly complex boundaries. 
+Per the book, training with jittered data discourages sharp changes in the response near the training points and so discurages the network from overly complex boundaries. Following the guidance from the book, we do not change any of the hyperparameters, except, during training, we jitter the data as we feed them into the net.
+
+
 
 <img src="Noise-Added-to-Smooth-boundary.png" alt="drawing" style="width:600px;"/>
