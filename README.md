@@ -41,7 +41,7 @@ Per Russell, "With 671 weights, but only 31 training points, the network is very
 
 Per the book, training with jittered data discourages sharp changes in the response near the training points and so discurages the network from overly complex boundaries. Following the guidance from the book, we do not change any of the hyperparameters, except, during training, we jitter the data as we feed them into the net.
 
-THe function to jitter the input is specified beow.
+The function to jitter the input is specified beow.
 
 ```
 def add_gauss_noise(point, sigma):
@@ -53,5 +53,6 @@ def add_gauss_noise(point, sigma):
     return point
 ```
 
+We notice that, for the same number of epochs and the same batch-size (effectively the same hyperparamters), the training regime is unable to overfit on the meager data.
 
 <img src="Noise-Added-to-Smooth-boundary.png" alt="drawing" style="width:600px;"/>
