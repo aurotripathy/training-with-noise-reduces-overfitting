@@ -4,7 +4,7 @@ In the presence of small datasets, overfitting is a likely outcome meaning that 
 
 ## The Dataset
 
-The dataset has only 31 points distributed equally adross two classes. I came across it in Russell Reed's seminal book, Neural Smithing (page 282). The data isn't (digitally) available anywhere, so I had to recreate it by hand (it was fun to work once again with a ruler and pencil). The two classes are resresented by the '+' and 'o' symbols. 
+Our dataset has only 31 two-dimensional points distributed equally adross two classes. I came across this dataset in Russell Reed's seminal book, Neural Smithing (page 282). The data isn't available on a website, so I had to recreate it by hand (it was fun to once again work with a ruler and pencil). See my handiwork below. The two classes are resresented by the '+' and 'o' symbols. 
 
 <img src="hand-derived-point.png-1.png" alt="drawing" style="width:600px;"/>
 
