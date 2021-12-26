@@ -1,6 +1,6 @@
 # Training With Noise Reduces Overfitting
 
-This example illustrates the smoothing effects of training with input jitter. This is a magical property and even to this day, has a lot of relevance because we are still data-starved and very prone to overfitting our models.
+In the presence of small datasets, overfitting is a likely outcome meaning that the model does not generalize very well to test data. In this example, we highlight a simple and powerful way to reduce overfitting.
 
 ## The Dataset
 
