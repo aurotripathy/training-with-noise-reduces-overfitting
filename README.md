@@ -10,7 +10,7 @@ The dataset has only 31 points distributed equally adross two classes. I came ac
 
 Going through an analog to digital conversion, we get a dataset of 31 point across two classes:
 
-<img src="original-dataset.png" alt="drawing" style="width:600px;"/>
+<img src="original-dataset.png" alt="drawing" style="width:700px;"/>
 
 ## The Model
 
