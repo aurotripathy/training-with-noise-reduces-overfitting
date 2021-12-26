@@ -16,6 +16,8 @@ Converting from the analog domain to digital gives us the 31 point spread across
 
 The model is a very simple 2/50/10/1 Multi-layer perceptron (MLP) network, the same used the Russell Reed's book. Note, I've (unknowingly) switched the hidden layer; to `2/10/50/1` instead of `2/50/10/1`, which is probably why the decision boundary does the look similar to the one in the book.
 
+The model is captured below.
+
 ```
 class ThreeLayerMLP(torch.nn.Module):
     def __init__(self):
@@ -33,7 +35,7 @@ class ThreeLayerMLP(torch.nn.Module):
 
 ## Trained to Intentionally Overfit
 
-Per Russell, "With 671 weights, but only 31 training points, the network is very underconstrained and chooses a very nonlinear boundary". And it does turn out that way as you can see below.
+Per Russell Reed, "With 671 weights, but only 31 training points, the network is very underconstrained and chooses a very nonlinear boundary". And it does turn out that way as you can see below.
 
 <img src="Known-Overfit.png" alt="drawing" style="width:600px;"/>
 
