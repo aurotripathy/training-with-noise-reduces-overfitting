@@ -15,6 +15,7 @@ Going through an analog to digital conversion, we geta dataset of 31 point and t
 ## The Model
 
 The model is a very simple 2/50/10/1 network, the same used the Russell's book. 
+
 <code>
 class ThreeLayerNLP(torch.nn.Module):
     def __init__(self):
