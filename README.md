@@ -59,11 +59,12 @@ We notice that, for the same number of epochs and the same batch-size (effective
 
 ## How to Run
 
-The default mode it to simply train over the small dataset with intentional overfitting.
+The default mode it to simply train over the small dataset with intentional overfitting (no jitter in the input data).
 
 ```
 python3 classify.py 
 ```
+The training yields the decision boundary plot, `Known-Overfit.png`.
 
 To jitter the inputs:
 
@@ -71,4 +72,5 @@ To jitter the inputs:
 python3 classify.py  --jitter
 
 ```
+Training with jitter yields the decision boundary plot, `Noise-Added-to-Smooth-boundary.png`.
 
