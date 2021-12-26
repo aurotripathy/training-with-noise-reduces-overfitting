@@ -14,7 +14,7 @@ Going through an analog to digital conversion, we get a dataset of 31 point acro
 
 ## The Model
 
-The model is a very simple 2/50/10/1 MLP network, the same used the Russell's book. Note, I've (unknowingly) switched the hidder layer's; 1-5- instead of 50-10, which is probably why the decision boundary does the look the same as in the book.
+The model is a very simple 2/50/10/1 MLP network, the same used the Russell's book. Note, I've (unknowingly) switched the hidder layer's; to `10-50` instead of `50-10`, which is probably why the decision boundary does the look the same as in the book.
 
 ```
 class ThreeLayerNLP(torch.nn.Module):
