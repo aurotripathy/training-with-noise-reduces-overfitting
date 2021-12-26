@@ -10,6 +10,6 @@ The dataset has only 31 points and two classes. I came across it in Russel Reed'
 
 ## The Model
 
-## Intentional Overfit
+## Trained to Intentionally Overfit
 
 ## Smoothing with Jitter
