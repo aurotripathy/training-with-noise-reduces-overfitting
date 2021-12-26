@@ -53,6 +53,6 @@ def add_gauss_noise(point, sigma):
     return point
 ```
 
-We notice that, for the same number of epochs and the same batch-size (effectively the same hyperparamters), the training regime is unable to overfit on the meager data.
+We notice that, for the same number of epochs and the same batch-size (effectively the same hyperparamters), the training regime is unable to overfit on the meager data (however hard we try).
 
 <img src="Noise-Added-to-Smooth-boundary.png" alt="drawing" style="width:600px;"/>
