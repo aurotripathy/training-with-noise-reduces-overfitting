@@ -8,13 +8,13 @@ Our dataset has only 31 two-dimensional points distributed equally across two cl
 
 <img src="hand-derived-point.png-1.png" alt="drawing" style="width:600px;"/>
 
-Converting from the analog domain to digital gives us the 31 point spread across two classes (the file,`points-two-classes.csv`):
+Converting from the analog domain (paper) to digital (a file) gives us the 31 point spread across two classes (the file,`points-two-classes.csv`):
 
 <img src="original-dataset.png" alt="drawing" style="width:600px;"/>
 
 ## The Model
 
-The model is a very simple 2/50/10/1 Multi-layer perceptron (MLP) network, the same used the Russell Reed's book. Note, I've (unknowingly) switched the hidden layer; to `2/10/50/1` instead of `2/50/10/1`, which is probably why the decision boundary does the look similar to the one in the book.
+The model is a very simple 2/50/10/1 Multi-Layer Perceptron (MLP) network, the same used the Russell Reed's book. Note, I've (unknowingly) switched the hidden layer; to `2/10/50/1` instead of `2/50/10/1`, which is probably why the decision boundary does the look similar to the one in the book.
 
 The model is captured below.
 
