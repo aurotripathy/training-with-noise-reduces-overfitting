@@ -14,7 +14,7 @@ Converting from the analog domain to digital gives us the 31 point spread across
 
 ## The Model
 
-The model is a very simple 2/50/10/1 MLP network, the same used the Russell's book. Note, I've (unknowingly) switched the hidder layer's; to `10-50` instead of `50-10`, which is probably why the decision boundary does the look the same as in the book.
+The model is a very simple 2/50/10/1 Multi-layer perceptron (MLP) network, the same used the Russell Reed's book. Note, I've (unknowingly) switched the hidden layer; to `2/10/50/1` instead of `2/50/10/1`, which is probably why the decision boundary does the look the same as in the book.
 
 ```
 class ThreeLayerNLP(torch.nn.Module):
