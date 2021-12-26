@@ -56,3 +56,11 @@ def add_gauss_noise(point, sigma):
 We notice that, for the same number of epochs and the same batch-size (effectively the same hyperparamters), the training regime is unable to overfit on the meager data (however hard we try).
 
 <img src="Noise-Added-to-Smooth-boundary.png" alt="drawing" style="width:600px;"/>
+
+## How to Run
+
+The default mode it to over the small dataset
+
+```
+python3 classify.py 
+```
