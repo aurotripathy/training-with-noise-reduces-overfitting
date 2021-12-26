@@ -73,3 +73,5 @@ python3 classify.py  --jitter
 ```
 Training with jitter yields the decision boundary plot, `Noise-Added-to-Smooth-boundary.png`.
 
+## Reference
+_Neural Smithing: Supervised Learning in Feedforward Artificial Neural Networks (A Bradford Book) Illustrated Edition_
