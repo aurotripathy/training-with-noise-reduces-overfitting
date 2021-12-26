@@ -8,6 +8,10 @@ The dataset has only 31 points and two classes. I came across it in Russel Reed'
 
 <img src="hand-derived-point.png-1.png" alt="drawing" style="width:600px;"/>
 
+Going through an analog to digital conversion, we get:
+
+<img src="original-dataset.png" alt="drawing" style="width:600px;"/>
+
 ## The Model
 
 ## Trained to Intentionally Overfit
