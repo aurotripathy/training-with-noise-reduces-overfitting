@@ -1,6 +1,6 @@
-# Training With Noise Reduces Overfitting
+# THe Unreasonable Effectiveness of Training With Jitter (i.e,, How to Reduces Overfitting)
 
-In the presence of small datasets, overfitting is a likely outcome meaning that the model does not generalize very well to test data. In this example, we highlight a simple and powerful way to reduce overfitting.
+In the presence of a small dataset, overfitting is a likely outcome meaning that the model does not generalize very well to test data. In this example, we highlight a simple and powerful way to reduce overfitting.
 
 ## The Dataset
 
