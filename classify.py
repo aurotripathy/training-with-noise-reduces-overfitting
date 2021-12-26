@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import argparse
 
 
-class ThreeLayerNLP(torch.nn.Module):
+class ThreeLayerMLP(torch.nn.Module):
     def __init__(self):
         super().__init__()
         self.layer1 = torch.nn.Linear(2, 10)
@@ -140,7 +140,7 @@ train_loader = torch.utils.data.DataLoader(train_ds,
                                            batch_size=batch_size, shuffle=True)
 
 print("Creating 2-10-50-1 binary NN classifier ")
-model = ThreeLayerNLP().to(device)
+model = ThreeLayerMLP().to(device)
 
 lrn_rate = 0.1
 loss_func = torch.nn.BCELoss()  # binary cross entropy
