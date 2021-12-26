@@ -8,7 +8,7 @@ Our dataset has only 31 two-dimensional points distributed equally adross two cl
 
 <img src="hand-derived-point.png-1.png" alt="drawing" style="width:600px;"/>
 
-Going through an analog to digital conversion, we get a dataset of 31 point across two classes (`points-two-classes.csv`):
+Converting from the analog domain to digital gives us the 31 point spread across two classes (`points-two-classes.csv`):
 
 <img src="original-dataset.png" alt="drawing" style="width:600px;"/>
 
