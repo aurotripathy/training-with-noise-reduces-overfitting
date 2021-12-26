@@ -70,7 +70,6 @@ To jitter the inputs:
 
 ```
 python3 classify.py  --jitter
-
 ```
 Training with jitter yields the decision boundary plot, `Noise-Added-to-Smooth-boundary.png`.
-```
+
