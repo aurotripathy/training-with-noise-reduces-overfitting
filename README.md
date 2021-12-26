@@ -41,6 +41,17 @@ Per Russell, "With 671 weights, but only 31 training points, the network is very
 
 Per the book, training with jittered data discourages sharp changes in the response near the training points and so discurages the network from overly complex boundaries. Following the guidance from the book, we do not change any of the hyperparameters, except, during training, we jitter the data as we feed them into the net.
 
+THe function to jitter the input is specified beow.
+
+```
+def add_gauss_noise(point, sigma):
+    noise_x = torch.tensor(np.random.normal(0, sigma, point.shape[0]),
+                           dtype=torch.float32)
+    noise_y = torch.tensor(np.random.normal(0, sigma, point.shape[0]),
+                           dtype=torch.float32)
+    point = point + torch.cat([noise_x, noise_y]).reshape(point.shape)
+    return point
+```
 
 
 <img src="Noise-Added-to-Smooth-boundary.png" alt="drawing" style="width:600px;"/>
