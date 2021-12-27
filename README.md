@@ -2,6 +2,8 @@
 
 In many scenarios where we're learning from a small dataset, an overfitted model is a likely outcome. By that we mean, the model may perform OK on the training data but does not generalize very well to test data.
 
+In this example, we highlight a simple yet powerful way to reduce overfitting.
+
 ## The Dataset
 
 Our dataset has only 31 two-dimensional points distributed equally across two classes. I came across this dataset in Russell Reed's seminal book, _Neural_ _Smithing_ (page 282). To my knowledge the data isn't available on the internet, so I had to recreate it by hand (it was fun to work with a ruler and pencil). See my handiwork below. The two classes are represented by the '+' and 'o' symbols. 
