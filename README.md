@@ -16,7 +16,7 @@ Converting from the analog domain (paper) to digital (a file) gives us the 31 po
 
 ## The Model
 
-The model is a very simple 2/50/10/1 Multi-Layer Perceptron (MLP) network, the same used the Russell Reed's book. Note, I've (unknowingly) switched the hidden layer; to `2/10/50/1` instead of `2/50/10/1`, which is probably why the decision boundary does the look similar to the one in the book.
+The model is a very simple 2/50/10/1 Multi-Layer Perceptron (MLP) network, the same used in Russell Reed's book. Note, I've (unknowingly) switched the hidden layer; to `2/10/50/1` instead of `2/50/10/1`, which is probably why the decision boundary does the look similar to the one in the book.
 
 The model is captured below.
 
