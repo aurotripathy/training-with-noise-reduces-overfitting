@@ -154,9 +154,9 @@ print(f"Batch size: {batch_size}")
 print(f"Max epochs: {max_epochs}")
 
 print(f"Training for {max_epochs} epochs")
+model = model.train()  # set training mode
 train(args.jitter)
 
-model = model.train()  # set training mode
 model = model.eval()
 acc_train = accuracy(model, train_ds)  # we don't have a test set
 print(f"Accuracy on train data = {(acc_train * 100):0.2f}")
