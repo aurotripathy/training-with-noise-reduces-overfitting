@@ -45,7 +45,7 @@ Per Russell Reed, "With 671 weights, but only 31 training points, the network is
 
 Per the book, "training with jittered data discourages sharp changes in the response near the training points and so discourages the network from overly complex boundaries." Following the guidance from the book, we do not change any of the training hyperparameters, except, during training, we jitter the data as we feed them into the net.
 
-The function to jitter the input is specified beow.
+The function to jitter the input is specified below.
 
 ```
 def add_gauss_noise(point, sigma):
