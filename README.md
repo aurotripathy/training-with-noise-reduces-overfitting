@@ -62,7 +62,7 @@ We notice that, for the same number of epochs and the same batch-size (effective
 <img src="Noise-Added-to-Smooth-boundary.png" alt="drawing" style="width:600px;"/>
 
 ## Summary
-To summarize, we went from the intentionally overfitted situation on the left-hand-side to a more generalized situation on the right-hand-side by adding small amounts of jitter.
+To summarize, we went from the intentionally overfitted situation on the left-hand-side to a more generalized situation on the right-hand-side by adding small amounts of jitter to the input data.
 
 <img src="m_merged.png" alt="drawing" style="width:600px;"/>
 
