@@ -2,7 +2,7 @@
 
 In many scenarios where we're learning from a small dataset, an overfitted model is a likely outcome. By that we mean, the model may perform OK on the training data but does not generalize very well to test data.
 
-In this example, we highlight a simple yet powerful way to reduce overfitting.
+In this post, we highlight a simple yet powerful way to reduce overfitting.
 
 ## The Dataset
 
