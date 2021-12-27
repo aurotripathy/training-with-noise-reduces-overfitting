@@ -66,7 +66,7 @@ To summarize, we went from the intentionally overfitted situation on the left-ha
 
 <img src="m_merged.png" alt="drawing" style="width:600px;"/>
 
-## How to Run
+## Code, Repeating my Results and Further Experiments
 
 The default mode it to simply train over the small dataset with intentional overfitting (no jitter in the input data).
 
@@ -83,5 +83,5 @@ python3 classify.py  --jitter
 Training with jitter yields the decision boundary plot, `Noise-Added-to-Smooth-boundary.png`.
 
 ## Reference
-_Neural Smithing: Supervised Learning in Feedforward Artificial Neural Networks (A Bradford Book) Illustrated Edition_
+_Neural Smithing: Supervised Learning in Feedforward Artificial Neural Networks (A Bradford Book) Illustrated Edition_,
 by Russell Reed
