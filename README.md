@@ -1,6 +1,6 @@
 # The Unreasonable Effectiveness of Training With Jitter (i.e, How to Reduce Overfitting)
 
-In many scenarios where we're learning from a small dataset, an overfitted model is a likely outcome, meaning that the model does not generalize very well to test data. In this example, we highlight a simple yet powerful way to reduce overfitting.
+In many scenarios where we're learning from a small dataset, an overfitted model is a likely outcome. By that we mean, the model may perform OK on the training data but does not generalize very well to test data.
 
 ## The Dataset
 
